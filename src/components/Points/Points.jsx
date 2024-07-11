@@ -29,7 +29,7 @@ const depositionsData = [
     rating: 3,
   },
 ];
-const Depositions = () => {
+const Points = () => {
   return (
     <>
       <span id="Depositions"></span>
@@ -61,4 +61,4 @@ const Depositions = () => {
   );
 };
 
-export default Depositions;
+export default Points;

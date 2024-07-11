@@ -13,9 +13,7 @@ const Footer = () => {
           <hr className='m-20 border border-yellow-600 mt-4'></hr>
         </div>
 
-        <div className='flex items-center justify-center md:-w-[600px] pb-20'>
-          <GoogleMap className="border rounded-lg" />
-        </div>
+        
 
       </div>
       <div className=' bg-dark text-white w-full py-12'>

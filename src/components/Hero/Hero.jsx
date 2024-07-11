@@ -1,35 +1,22 @@
-import Image from 'next/image';
+import { FaHome, FaMoneyBillAlt } from "react-icons/fa";
+import { ImHammer2 } from "react-icons/im";
+import { IoChatbubbleOutline } from "react-icons/io5";
 
 const Hero = () => {
   return (
-    <div className=" grid  grid-cols-2 place-items-center bg-gradient-to-r  from-black via-[rgb(22,26,30)] to-[rgb(21,25,30)] ">
-      <div className=" text-center">
-        <div className="space-y-3 p-4">
-          <h1 className="text-2xl sm:text-3xl md:text-5xl xl:text-7xl text-white font-bold">
-            Resultados Todos os Dias
-          </h1>
-          <p className="text-xl md:text-2xl xl:text-5xl text-yellow-600 font-bold">
-            Venha treinar na academia que tem conforto e resultados.
-          </p>
-          <button className="uppercase rounded-lg bg-green-700 hover:bg-yellow-600
-             hover:text-white duration-300 py-2 px-6 text-white">
-            Escolha sua saúde agora mesmo
+    <header className="bg-gray-100 p-10 flex items-center justify-end sticky top-0 z-10 shadow-md">
+      <div className="flex items-center gap-4 px-[10rem]">
+        <img src="/logo.png" alt="Logo" className="w-16 h-auto  mr-[20rem]" />
+        <div className="gap-4 flex">
+        <h2>Inscreva-se para Participar</h2>
+         <p>É muito rápido e fácil participar.</p>
+          <button className=" flex rounded-md text-white bg-[#ffaa00] hover:text-blue-800 duration-300 py-2 px-6 text-blue transition-all"> 
+            <IoChatbubbleOutline/>
+            <span>Contato</span>
           </button>
         </div>
       </div>
-      <div className="">
-        <div className=" md:h-auto md:w-auto">
-          <Image src="/images/website/pernas.jpg"
-            width={1920}
-            height={1080}
-            alt="hero"
-            className="w-full h-full object-cover"
-          />
-        </div>
-
-
-      </div>
-    </div>
+    </header>
   );
 };
 
